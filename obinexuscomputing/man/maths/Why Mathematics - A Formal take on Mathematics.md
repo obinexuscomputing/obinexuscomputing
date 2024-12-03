@@ -21,8 +21,9 @@ However a formal system of reasoning is used in maths and physics to disassemble
 Mathematics is not about throwing statements, it is about the justification and core ideas principles behind those statements. It is the foundation used in physics when people says if you if you are good at maths you are good in physics.
 
 ### Was Mathematics Discovered or Invented?
-Maths is a system used to explain the phenomena, and so
+Maths is a system used to explain the phenomena. In my opinion, maths was invented to solve many problems governed by the time/space and casualty of that mathematical universe filled with it own set of constructs.
 
+These means in a different mathematically universe, the rules that govern it will be different.
 ## Mathematical System are not perfect. 
 Raytracing is a technique used to 
 
