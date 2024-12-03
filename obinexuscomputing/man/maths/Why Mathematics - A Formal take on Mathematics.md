@@ -23,7 +23,9 @@ Mathematics is not about throwing statements, it is about the justification and 
 ### Was Mathematics Discovered or Invented?
 Maths is a system used to explain the phenomena, and so
 
+## Mathematical System are not perfect. 
+Raytracing is a technique used to 
 
-## Mathematical System are not perfect.
+
 Reintroduction to maths
 Numbers are symbols.
