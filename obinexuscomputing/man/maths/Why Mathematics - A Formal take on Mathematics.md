@@ -2,7 +2,7 @@ By Nnamdi Michael Okpala
 ### What is Mathematics - My Take?
 I would define mathematics  as 'A **formal system** used to define solve and explains phenomena   problems around us' .A phenomena is something in question.  A problem is a gap between between you, and the objective(end goals).
 
-Such example are  combustions
+Such example are  combustions.
 The term **formal** is derived form the word **form** which means being structured.
 
 A system is collection of components working together to achieve a overall outcome. An example of system included, but are not limited to:
@@ -40,8 +40,7 @@ f(t) = interoplation function.
 As a creative problem solvers, we create models. A mathematician must recognize these limitation of such system and know when to diverge ,and solve the problem in an unconventional  manner. This is what mathematician noticed.
 
 There was a problem in 3D. F(t)= (1-t)c+ tp does not work for three dimension as the projection
-
-To solve this in **three-dimension** , the 
+To solve this in **three-dimension** , we cast a 3d ray from the origin, through the screen and  
 
 
 
