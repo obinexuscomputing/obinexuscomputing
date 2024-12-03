@@ -26,22 +26,9 @@ Maths is a system used to explain the phenomena. In my opinion, maths was invent
 These means in a different mathematically universe, the rules that govern it will be different.
 ## Mathematical System are not perfect. 
 Raytracing is a technique used to render realistic material  and environment. It is governed by the Mathematics of our universe and is simulated by computers. A fundamental reason  is why Mathematics is not perfect is due to the rule that introduces new problems that is beyond the confines of a great never perfect system.
-
-For example, when raytracing using the traditional linear interpolation piecewise /franken function.
-
-```tex
-%% t = <x,y> %%
-f(t) = (1-t)c + tp  
-= (1-x1)c + x2 p
-= (1-y1)c + y2p
-where t is a 2d point
-f(t) = interoplation function.
-```
 As a creative problem solvers, we create models. A mathematician must recognize these limitation of such system and know when to diverge ,and solve the problem in an unconventional  manner. This is what mathematician noticed.
 
-There was a problem in 3D. F(t)= (1-t)c+ tp does not work for three dimension as the projection
-To solve this in **three-dimension** , we cast a 3d ray from the origin, through the screen and  
-
+A ray does not have slope-intercept form in 3D.
 
 
 Reintroduction to maths
