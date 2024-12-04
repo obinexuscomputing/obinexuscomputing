@@ -1,8 +1,7 @@
 // src/components/LorentzClock/index.js
 import { ref, onMounted, onUnmounted } from 'vue';
 import clockSvg from './clock.svg?raw';  // Using Vite's raw loader
-import { svgToDataUrl, svgToBase64DataUrl } from '../utils/svgConverter';
-import { calculateLorentzFactor } from '../../utils/relativity';
+import { svgToDataUrl, svgToBase64DataUrl,calculateLorentzFactor } from '@/utils/index';
 
 export default {
   name: 'LorentzClock',
