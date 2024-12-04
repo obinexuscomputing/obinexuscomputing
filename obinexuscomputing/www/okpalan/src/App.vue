@@ -1,7 +1,6 @@
 <template>
   <div class="app">
-    <AppHeader />
-    
+    <HeroHeader />
     <main class="main-content">
       <!-- Router view with transitions -->
       <router-view v-slot="{ Component }">
@@ -10,22 +9,21 @@
         </transition>
       </router-view>
     </main>
-
-    <AppFooter />
+    <HeroFooter />
   </div>
 </template>
 
 <script>
 import { defineComponent } from 'vue'
-import AppHeader from '@/components/layout/AppHeader.vue'
-import AppFooter from '@/components/layout/AppFooter.vue'
+import HeroHeader from '@/components/layouts/HeroHeader.vue'
+import HeroFooter from '@/components/layouts/HeroFooter.vue'
 
 export default defineComponent({
   name: 'App',
   
   components: {
-    AppHeader,
-    AppFooter
+    HeroHeader,
+    HeroFooter
   }
 })
 </script>

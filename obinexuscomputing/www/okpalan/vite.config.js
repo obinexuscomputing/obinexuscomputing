@@ -129,8 +129,8 @@ export default defineConfig(({ mode }) => ({
     preprocessorOptions: {
       scss: {
         additionalData: `
-          @import "@assets/styles/variables.scss";
-          @import "@assets/styles/mixins.scss";
+          @import "@assets/styles/vars.scss";
+          // @import "@assets/styles/mixins.scss";
         `
       }
     },
