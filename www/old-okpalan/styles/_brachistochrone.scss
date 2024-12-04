@@ -1,0 +1,125 @@
+@use "sass:color";
+@use "variables" as *;
+@use "mixins" as *;
+
+.brachistochrone {
+    .header {
+        text-align: center;
+        margin-bottom: 2rem;
+
+        h1 {
+            font-size: 2.5rem;
+            color: #2c3e50;
+            margin-bottom: 0.5rem;
+        }
+
+        .description {
+            color: #64748b;
+            font-size: 1.1rem;
+        }
+    }
+
+    .control-panel {
+        display: grid;
+        gap: 2rem;
+        margin-bottom: 2rem;
+        padding: 1.5rem;
+        background-color: #f8f9fa;
+        border-radius: 8px;
+    }
+
+    .input-section {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1.5rem;
+    }
+
+    .input-group {
+        label {
+            display: block;
+            font-weight: 600;
+            color: #4a5568;
+            margin-bottom: 0.5rem;
+        }
+    }
+
+    .coordinate-inputs {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0.5rem;
+
+        input {
+            padding: 0.75rem;
+            border: 2px solid #e2e8f0;
+            border-radius: 6px;
+            font-size: 1rem;
+            width: 100%;
+            transition: border-color 0.2s ease;
+
+            &:focus {
+                border-color: #3498db;
+                outline: none;
+            }
+        }
+    }
+
+    .method-selection {
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+    }
+
+    .method-btn {
+        padding: 0.75rem 1.5rem;
+        border: 2px solid #3498db;
+        border-radius: 6px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.2s ease;
+        background: white;
+        color: #3498db;
+
+        &:hover {
+            background: #3498db;
+            color: white;
+        }
+
+        &.active {
+            background: #3498db;
+            color: white;
+        }
+    }
+
+    .info-panel {
+        background-color: #f8f9fa;
+        padding: 1.5rem;
+        border-radius: 8px;
+
+        .method-info {
+            display: none;
+
+            &.active {
+                display: block;
+            }
+
+            h3 {
+                color: #2c3e50;
+                margin-bottom: 0.5rem;
+            }
+
+            p {
+                color: #64748b;
+            }
+        }
+    }
+
+    @media (max-width: 768px) {
+        .input-section {
+            grid-template-columns: 1fr;
+        }
+
+        .method-selection {
+            flex-direction: column;
+        }
+    }
+}

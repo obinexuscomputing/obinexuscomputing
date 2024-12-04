@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG to Data URL Converter</title>
+</head>
+<body>
+    <div class="container">
+        <h1>SVG to Data URL Converter</h1>
+        
+        <div class="converter-card">
+            <div class="input-group">
+                <label>Input SVG</label>
+                <textarea 
+                    id="svgInput"
+                    class="code-input"
+                ></textarea>
+            </div>a
+            <div class="format-selector">
+                <label>Output Format:</label>
+                <select id="outputType">
+                    <option value="url">URL Encoded</option>
+                    <option value="base64">Base64 Encoded</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <label>Output</label>
+                <div class="output-container">
+                    <textarea
+                        id="output"
+                        class="code-input"
+                        readonly
+                    ></textarea>
+                    <button id="copyButton">Copy</button>
+                </div>
+            </div>
+
+            <div class="input-group">
+                <label>Preview</label>
+                <div id="preview"></div>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+</body>
+</html>

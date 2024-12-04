@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Mathematical Visualizations</title>
+    <!-- inject:css -->
+    <!-- endinject -->
+
+    <!-- External Dependencies -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
+    <script src="https://d3js.org/d3.v7.min.js" onerror="fallbackD3()"></script>
+    <script>
+        function fallbackD3() {
+            if (typeof d3 === 'undefined') {
+                console.warn('Primary D3 source failed, loading fallback...');
+                var script = document.createElement('script');
+                script.src = 'https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js';
+                document.head.appendChild(script);
+            }
+        }
+    </script>
+
+    <meta http-equiv="Content-Security-Policy" 
+          content="default-src 'self'; 
+                   script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdnjs.cloudflare.com https://d3js.org;
+                   style-src 'self' 'unsafe-inline';
+                   img-src 'self' data: https:;
+                   font-src 'self';
+                   connect-src 'self';">
+</head>
+<body>
+    <div class="container home">
+        <header class="header">
+            <h1>Mathematical Visualizations</h1>
+            <p class="description">Interactive visualizations of mathematical concepts</p>
+        </header>
+
+        <nav class="navigation">
+            <div class="visualizations-grid">
+                <a href="collatz" class="visualization-card">
+                    <div class="card-content">
+                        <h2>Collatz Sequence</h2>
+                        <p>Explore the Collatz conjecture through interactive visualizations</p>
+                        <div class="features">
+                            <span class="feature">Trajectory View</span>
+                            <span class="feature">Parity Analysis</span>
+                            <span class="feature">Statistics</span>
+                        </div>
+                    </div>
+                    
+                </a>
+
+                <a href="brachistochrone" class="visualization-card">
+                    <div class="card-content">
+                        <h2>Brachistochrone</h2>
+                        <p>Compare different approaches to the curve of fastest descent</p>
+                        <div class="features">
+                            <span class="feature">Traditional</span>
+                            <span class="feature">Triangle</span>
+                            <span class="feature">Spline</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </nav>
+    </div>
+
+    <!-- inject:js -->
+    <!-- endinject -->
+</body>
+</html>
