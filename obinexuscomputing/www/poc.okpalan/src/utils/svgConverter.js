@@ -29,3 +29,17 @@ export function svgToBase64DataUrl(svgContent) {
     const base64 = btoa(svgContent);
     return `data:image/svg+xml;base64,${base64}`;
 }
+
+
+// Convert and update function
+export function updateOutput() {
+    const svg = svgInput.value;
+    const converter = outputType.value === 'url' ? svgToDataUrl : svgToBase64DataUrl;
+    const converted = converter(svg);
+    
+    // Update output
+    output.value = converted;
+    
+    // Update preview
+    preview.innerHTML = svg;
+}
