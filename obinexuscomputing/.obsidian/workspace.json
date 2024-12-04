@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "man/TODO.md",
+                "file": "man/OBINexus Computing Manual Files.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "TODO"
+              "title": "OBINexus Computing Manual Files"
             }
           }
         ]
@@ -164,8 +164,15 @@
       "zk-prefixer:Create new unique note": false
     }
   },
-  "active": "c6322a5ef0f3a799",
+  "active": "dc6e96efa5032eb7",
   "lastOpenFiles": [
+    "man/TODO.md",
+    "man/OBINexus Computing Manual Files.md",
+    "man/2024-12-04.md",
+    "data/Why Mathematics - A Formal take on Mathematics.pdf",
+    "data/OBINexus Computing Manual Files.pdf",
+    "man/maths/Why Mathematics - A Formal take on Mathematics.md",
+    "man/quatum-collatz/Quantum Collatz.md",
     "www/okpalan/dist/assets/AboutView-Dt5GU1RN.js",
     "www/okpalan/dist/assets/index-B-qPasSK.js",
     "www/okpalan/dist/assets/AboutView-CSIvawM9.css",
@@ -174,9 +181,6 @@
     "www/okpalan/dist/assets",
     "www/okpalan/dist/favicon.ico",
     "www/okpalan/dist",
-    "www/okpalan/pnpm-lock.yaml",
-    "www/okpalan/pnpm-lock.yaml.2244059207",
-    "www/okpalan/node_modules/@vue",
     "www/okpalan/node_modules/esquery/README.md",
     "www/okpalan/node_modules/minimatch/README.md",
     "www/okpalan/node_modules/uri-js/README.md",
@@ -197,11 +201,6 @@
     "www/okpalan/node_modules/whatwg-url/README.md",
     "www/okpalan/node_modules/path-browserify/security.md",
     "www/okpalan/node_modules/vscode-uri/LICENSE.md",
-    "www/okpalan/node_modules/path-browserify/CHANGELOG.md",
-    "www/okpalan/node_modules/espree/README.md",
-    "www/okpalan/node_modules/estree-walker/CHANGELOG.md",
-    "www/okpalan/node_modules/fast-json-stable-stringify/README.md",
-    "www/okpalan/node_modules/kolorist/README.md",
     "www/okpalan/node_modules/playwright-core/lib/vite/traceViewer/playwright-logo.svg",
     "www/okpalan/node_modules/playwright-core/lib/vite/recorder/playwright-logo.svg",
     "www/okpalan/node_modules/playwright-core/lib/server/chromium/appIcon.png",
