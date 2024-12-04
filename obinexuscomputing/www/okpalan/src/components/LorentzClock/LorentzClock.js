@@ -3,6 +3,19 @@ import clockSvg from './clock.svg?raw'
 import { SPEED_OF_LIGHT } from './constants'
 import { useClockAnimation } from './composables/useClockAnimation'
 import { useClockExport } from './composables/useClockExport'
+import { 
+  calculateLorentzFactor,
+  calculateDilatedTime,
+  svgToDataUrl,
+  updateClockHands 
+} from '@/utils'
+
+// // Example usage
+// const gamma = calculateLorentzFactor(velocity, SPEED_OF_LIGHT)
+// const dilatedTime = calculateDilatedTime(properTime, gamma)
+// updateClockHands('proper', new Date())
+// const dataUrl = svgToDataUrl(svgContent)
+
 
 export default {
   name: 'LorentzClock',

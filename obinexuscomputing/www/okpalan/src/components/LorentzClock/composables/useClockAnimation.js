@@ -1,5 +1,5 @@
 import { ref } from 'vue'
-import { calculateLorentzFactor } from '@/utils'
+import { calculateLorentzFactor ,useClockHands } from '@/utils'
 
 export function useClockAnimation(clockContainer, velocity, clockState, clockSvg, c) {
   const animationFrame = ref(null)
