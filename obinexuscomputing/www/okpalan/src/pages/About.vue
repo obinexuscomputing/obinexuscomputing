@@ -1,190 +1,102 @@
 <template>
-    <div class="about">
-      <header class="about-header">
-        <h1>About the Project</h1>
-        <router-link to="/" class="back-link">← Back to Visualization</router-link>
-      </header>
-  
-      <main class="about-content">
-        <section class="about-section">
-          <h2>Project Overview</h2>
-          <p>
-            This relativistic clock visualization was created to help understand and
-            demonstrate the effects of special relativity on time. Using interactive
-            controls, users can explore how motion affects the passage of time in
-            different reference frames.
-          </p>
-        </section>
-  
-        <section class="about-section">
-          <h2>Technical Details</h2>
-          <div class="tech-stack">
-            <div class="tech-item">
-              <h3>Frontend Framework</h3>
-              <p>Built with Vue 3 and Vite for optimal performance</p>
-            </div>
-            <div class="tech-item">
-              <h3>Graphics</h3>
-              <p>SVG-based visualization with dynamic updates</p>
-            </div>
-            <div class="tech-item">
-              <h3>Physics Engine</h3>
-              <p>Custom-built relativistic calculations following special relativity</p>
-            </div>
-          </div>
-        </section>
-  
-        <section class="about-section">
-          <h2>How It Works</h2>
-          <div class="explanation">
-            <h3>The Lorentz Factor</h3>
-            <p>
-              The visualization uses the Lorentz factor (γ) to calculate time dilation:
-              γ = 1/√(1 - v²/c²), where v is the relative velocity and c is the speed
-              of light. This factor determines how much time dilates for an object
-              moving at velocity v.
-            </p>
-  
-            <h3>Clock Synchronization</h3>
-            <p>
-              The two clocks show time in different reference frames:
-            </p>
-            <ul>
-              <li>The stationary frame (left clock) shows proper time</li>
-              <li>The moving frame (right clock) shows dilated time</li>
-            </ul>
-          </div>
-        </section>
-  
-        <section class="about-section">
-          <h2>Resources</h2>
-          <ul class="resources-list">
-            <li>
-              <a href="https://en.wikipedia.org/wiki/Time_dilation" target="_blank">
-                Time Dilation on Wikipedia
-              </a>
-            </li>
-            <li>
-              <a href="https://en.wikipedia.org/wiki/Special_relativity" target="_blank">
-                Special Relativity on Wikipedia
-              </a>
-            </li>
-            <li>
-              <a href="https://github.com/yourusername/relativistic-clock" target="_blank">
-                Project Repository
-              </a>
-            </li>
-          </ul>
-        </section>
-      </main>
+  <div class="about-page">
+    <BasePattern
+      pattern="f"
+      :content="fPatternContent"
+    />
+    
+    <BasePattern
+      pattern="t"
+      :content="tPatternContent"
+    />
+    
+    <BasePattern
+      pattern="z"
+      :content="zPatternContent"
+    />
+  </div>
+</template>
+
+<script setup lang="js">
+import BasePattern from '@/components/patterns/BasePattern.vue'
+
+const fPatternContent = {
+  header: `
+    <h1>Understanding Special Relativity</h1>
+  `,
+  main: `
+    <p>Time dilation is a fascinating consequence of Einstein's special relativity theory. 
+    When objects move at high velocities relative to each other, time flows at different
+    rates for each observer.</p>
+  `,
+  sidebar: `
+    <div class="info-box">
+      <h3>Key Concept</h3>
+      <p>The closer an object's velocity gets to the speed of light, 
+      the more pronounced the time dilation effect becomes.</p>
     </div>
-  </template>
-  
-  <script>
-  export default {
-    name: 'AboutPage'
-  }
-  </script>
-  
-  <style scoped>
-  .about {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 2rem;
-  }
-  
-  .about-header {
-    text-align: center;
-    margin-bottom: 3rem;
-  }
-  
-  .about-header h1 {
-    font-size: 2.5rem;
-    color: #2c3e50;
-    margin-bottom: 1rem;
-  }
-  
-  .back-link {
-    color: #42b983;
-    text-decoration: none;
-  }
-  
-  .back-link:hover {
-    text-decoration: underline;
-  }
-  
-  .about-section {
-    background: white;
-    padding: 2rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin-bottom: 2rem;
-  }
-  
-  .about-section h2 {
-    color: #2c3e50;
-    margin-bottom: 1.5rem;
-  }
-  
-  .tech-stack {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1.5rem;
-  }
-  
-  .tech-item {
+  `,
+  secondary: `
+    <p>Our interactive visualization demonstrates this effect using synchronized clocks,
+    allowing you to explore how velocity affects the passage of time.</p>
+  `
+}
+
+const tPatternContent = {
+  header: `
+    <h2>The Lorentz Factor</h2>
+  `,
+  main: `
+    <p>The mathematical relationship between velocity and time dilation is described
+    by the Lorentz factor (γ). This fundamental equation shows how time slows down
+    as velocity increases.</p>
+  `,
+  secondary: `
+    <div class="formula">
+      γ = 1/√(1 - v²/c²)
+    </div>
+  `
+}
+
+const zPatternContent = {
+  main: `
+    <h2>Interactive Exploration</h2>
+    <p>Our visualization tool lets you experiment with different velocities
+    and observe the resulting time dilation effects in real-time.</p>
+  `,
+  secondary: `
+    <p>Use the controls to adjust velocity components and watch as the clocks
+    demonstrate the fascinating consequences of special relativity.</p>
+  `
+}
+</script>
+
+<style lang="scss" scoped>
+.about-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.info-box {
+  background: #f5f5f5;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border-left: 4px solid #42b983;
+}
+
+.formula {
+  font-family: monospace;
+  font-size: 1.2em;
+  text-align: center;
+  padding: 1rem;
+  background: #f5f5f5;
+  border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+  .about-page {
     padding: 1rem;
-    background: #f8f9fa;
-    border-radius: 4px;
   }
-  
-  .tech-item h3 {
-    color: #42b983;
-    margin-bottom: 0.5rem;
-  }
-  
-  .explanation h3 {
-    color: #2c3e50;
-    margin: 1.5rem 0 0.5rem;
-  }
-  
-  .explanation ul {
-    list-style-type: disc;
-    padding-left: 1.5rem;
-    margin: 1rem 0;
-  }
-  
-  .resources-list {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .resources-list li {
-    margin-bottom: 0.5rem;
-  }
-  
-  .resources-list a {
-    color: #42b983;
-    text-decoration: none;
-    display: inline-block;
-    padding: 0.5rem 0;
-  }
-  
-  .resources-list a:hover {
-    text-decoration: underline;
-  }
-  
-  @media (max-width: 768px) {
-    .about {
-      padding: 1rem;
-    }
-    
-    .about-header h1 {
-      font-size: 2rem;
-    }
-    
-    .tech-stack {
-      grid-template-columns: 1fr;
-    }
-  }
-  </style>
+}
+</style>
