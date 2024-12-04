@@ -1,7 +1,6 @@
 export { 
   svgToDataUrl, 
-  svgToBase64DataUrl, 
-  updateClockHands
+  svgToBase64DataUrl 
 } from './svgConverter'
 
 export { 
