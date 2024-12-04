@@ -25,6 +25,7 @@
   },
   "dependencies": {
     "@vitejs/plugin-vue": "^5.2.1",
+    "date-fns": "^4.1.0",
     "glob": "^11.0.0",
     "lucide-vue-next": "^0.465.0",
     "pinia": "^2.3.0",
