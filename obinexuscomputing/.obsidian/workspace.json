@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "man/maths/Why Mathematics - A Formal take on Mathematics.md",
+                "file": "man/TODO.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Why Mathematics - A Formal take on Mathematics"
+              "title": "TODO"
             }
           }
         ]
@@ -52,7 +52,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "path:\"man/quatum-collatz/\" ",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -166,16 +166,50 @@
   },
   "active": "c6322a5ef0f3a799",
   "lastOpenFiles": [
-    "Untitled.md",
-    "Untitled 2.md",
-    "Untitled 1.md",
-    "man/maths/Why Mathematics - A Formal take on Mathematics.md",
-    "man/OBINexus Computing Manual Files.md",
-    "data/Why Mathematics - A Formal take on Mathematics.pdf",
-    "data/OBINexus Computing Manual Files.pdf",
-    "data/lost+found",
-    "data",
-    "New folder",
-    "man/maths"
+    "www/okpalan/dist/assets/AboutView-Dt5GU1RN.js",
+    "www/okpalan/dist/assets/index-B-qPasSK.js",
+    "www/okpalan/dist/assets/AboutView-CSIvawM9.css",
+    "www/okpalan/dist/assets/index-5dJgFXHu.css",
+    "www/okpalan/dist/index.html",
+    "www/okpalan/dist/assets",
+    "www/okpalan/dist/favicon.ico",
+    "www/okpalan/dist",
+    "www/okpalan/pnpm-lock.yaml",
+    "www/okpalan/pnpm-lock.yaml.2244059207",
+    "www/okpalan/node_modules/@vue",
+    "www/okpalan/node_modules/esquery/README.md",
+    "www/okpalan/node_modules/minimatch/README.md",
+    "www/okpalan/node_modules/uri-js/README.md",
+    "www/okpalan/node_modules/js-yaml/README.md",
+    "www/okpalan/node_modules/graphemer/README.md",
+    "www/okpalan/node_modules/graphemer/CHANGELOG.md",
+    "www/okpalan/node_modules/iconv-lite/README.md",
+    "www/okpalan/node_modules/js-yaml/CHANGELOG.md",
+    "www/okpalan/node_modules/foreground-child/README.md",
+    "www/okpalan/node_modules/superjson/README.md",
+    "www/okpalan/node_modules/ws/README.md",
+    "www/okpalan/node_modules/source-map-js/README.md",
+    "www/okpalan/node_modules/minipass/README.md",
+    "www/okpalan/node_modules/json5/README.md",
+    "www/okpalan/node_modules/nanoid/README.md",
+    "www/okpalan/node_modules/vscode-uri/SECURITY.md",
+    "www/okpalan/node_modules/commander/Readme.md",
+    "www/okpalan/node_modules/whatwg-url/README.md",
+    "www/okpalan/node_modules/path-browserify/security.md",
+    "www/okpalan/node_modules/vscode-uri/LICENSE.md",
+    "www/okpalan/node_modules/path-browserify/CHANGELOG.md",
+    "www/okpalan/node_modules/espree/README.md",
+    "www/okpalan/node_modules/estree-walker/CHANGELOG.md",
+    "www/okpalan/node_modules/fast-json-stable-stringify/README.md",
+    "www/okpalan/node_modules/kolorist/README.md",
+    "www/okpalan/node_modules/playwright-core/lib/vite/traceViewer/playwright-logo.svg",
+    "www/okpalan/node_modules/playwright-core/lib/vite/recorder/playwright-logo.svg",
+    "www/okpalan/node_modules/playwright-core/lib/server/chromium/appIcon.png",
+    "www/okpalan/src/assets/logo.svg",
+    "www/okpalan/okpalan/src/assets/logo.svg",
+    "old-www/pages/dist/assets/home-icon.svg",
+    "old-www/assets/home-icon.svg",
+    "www/pages/dist/assets/home-icon.svg",
+    "www/assets/home-icon.svg"
   ]
 }
