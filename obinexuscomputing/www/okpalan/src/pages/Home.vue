@@ -14,7 +14,7 @@
             <p>
               Time dilation is a consequence of Einstein's special relativity where time passes at 
               different rates for objects moving relative to each other. The effect becomes more 
-              pronounced as velocity approaches the speed of light (c ≈ 3×10⁸ m/s).
+              pronounced as velocity approaches the speed of light (c ≈ 3x10⁸ m/s).
             </p>
             <div class="formula">
               γ = 1/√(1 - v²/c²)

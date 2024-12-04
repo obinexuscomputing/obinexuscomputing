@@ -1,31 +1,21 @@
 <template>
   <div class="app">
+    <RouteProgress />
     <HeroHeader />
     <main class="main-content">
-      <!-- Router view with transitions -->
-      <router-view v-slot="{ Component }">
-        <transition name="fade" mode="out-in">
-          <component :is="Component" />
-        </transition>
-      </router-view>
+      <Transition name="fade" mode="out-in">
+        <RouterView />
+      </Transition>
     </main>
     <HeroFooter />
   </div>
 </template>
+  
 
-<script>
-import { defineComponent } from 'vue'
+<script setup>
+import { RouterView } from 'vue-router'
 import HeroHeader from '@/components/layouts/HeroHeader.vue'
 import HeroFooter from '@/components/layouts/HeroFooter.vue'
-
-export default defineComponent({
-  name: 'App',
-  
-  components: {
-    HeroHeader,
-    HeroFooter
-  }
-})
 </script>
 
 <style>
@@ -37,7 +27,7 @@ export default defineComponent({
 }
 
 body {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
     'Helvetica Neue', Arial, sans-serif;
   line-height: 1.6;
   color: #333;
