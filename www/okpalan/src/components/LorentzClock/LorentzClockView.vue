@@ -1,34 +1,41 @@
-<!-- src/components/LorentzClockView.vue -->
 <template>
-    <div class="clock-container">
-      <div ref="clockContainer" class="clock-display"></div>
-      
-      <div class="controls">
-        <div class="velocity-inputs">
-          <label v-for="axis in ['x', 'y', 'z']" :key="axis">
-            {{ axis }} velocity (m/s):
-            <input 
-              type="number" 
-              :value="velocity[axis]" 
-              @input="updateVelocity(axis, $event.target.value)"
-            />
-          </label>
-        </div>
-        
-        <div class="export-buttons">
-          <button @click="exportClock('url')">Export as URL</button>
-          <button @click="exportClock('base64')">Export as Base64</button>
-        </div>
-        
-        <div class="stats">
-          <p>Lorentz Factor (γ): {{ clockState.gamma.toFixed(6) }}</p>
-          <p>Time Dilation: {{ ((clockState.gamma - 1) * 100).toFixed(2) }}%</p>
-        </div>
+  <div class="clock-container">
+    <div ref="clockContainer" class="clock-display"></div>
+    
+    <div class="controls">
+      <div class="velocity-inputs">
+        <label v-for="axis in ['x', 'y', 'z']" :key="axis">
+          {{ axis }} velocity (m/s):
+          <input 
+            type="number" 
+            :value="velocity[axis]" 
+            @input="updateVelocity(axis, $event.target.value)"
+          />
+        </label>
+      </div>
+
+      <div class="export-buttons">
+        <button @click="exportClock('url')">Export as URL</button>
+        <button @click="exportClock('base64')">Export as Base64</button>
+      </div>
+
+      <div class="stats">
+        <p>Lorentz Factor (γ): {{ clockState.gamma.toFixed(6) }}</p>
+        <p>Time Dilation: {{ ((clockState.gamma - 1) * 100).toFixed(2) }}%</p>
       </div>
     </div>
-  </template>
-  
-  <script>
+  </div>
+</template>
+
+<script>
+import { defineComponent } from 'vue'
+import LorentzClock from './LorentzClock'
+
+export default defineComponent({
+  name: 'LorentzClockView',
+  extends: LorentzClock
+})
+</script>
   import LorentzClock from './LorentzClock';
   
   export default {
