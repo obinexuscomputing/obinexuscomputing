@@ -1,16 +1,16 @@
 <template>
   <div class="app">
-    <RouteProgress />
     <HeroHeader />
     <main class="main-content">
-      <Transition name="fade" mode="out-in">
-        <RouterView />
-      </Transition>
+      <RouterView v-slot="{ Component }">
+        <Transition name="fade" mode="out-in">
+          <Component :is="Component" />
+        </Transition>
+      </RouterView>
     </main>
     <HeroFooter />
   </div>
 </template>
-  
 
 <script setup>
 import { RouterView } from 'vue-router'
