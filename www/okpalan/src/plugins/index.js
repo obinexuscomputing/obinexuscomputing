@@ -1,1 +1,0 @@
-export { vitePluginSitemap} from './sitemap.js';
