@@ -1,4 +1,4 @@
-Certainly! Here’s a shortened version of your text in Markdown with more concise language:
+
 
 # Hi, I'm Nnamdi Michael Okpala! 👋
 
